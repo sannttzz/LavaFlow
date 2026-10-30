@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visão geral | LavaFlow</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/componentes.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/paginas.css">
+</head>
+<body class="app" data-area="admin">
+  <aside class="sidebar" id="sidebar"></aside>
+
+  <main class="conteudo">
+    <header class="cabecalho-pagina">
+      <div>
+        <p class="rotulo">Unidade Centro</p>
+        <h1>Visão geral</h1>
+        <p class="texto-suave">Acompanhe a operação e os agendamentos de hoje.</p>
+      </div>
+      <a href="agenda.html" class="botao">Abrir agenda</a>
+    </header>
+
+    <section class="grade-4 estatisticas">
+      <div class="cartao"><strong>18</strong><span class="texto-suave">Agendamentos hoje</span></div>
+      <div class="cartao"><strong>4</strong><span class="texto-suave">Veículos em atendimento</span></div>
+      <div class="cartao"><strong>9</strong><span class="texto-suave">Concluídos hoje</span></div>
+      <div class="cartao"><strong>R$ 1.482</strong><span class="texto-suave">Faturamento previsto</span></div>
+    </section>
+
+    <section class="admin-duas-colunas">
+      <div class="cartao sem-padding">
+        <h2 class="titulo-bloco">Operação de hoje</h2>
+        <table class="tabela">
+          <thead><tr><th>Horário</th><th>Veículo</th><th>Serviço</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr>
+              <td><strong>14:00</strong><small>até 15:30</small></td>
+              <td><strong>Volkswagen T-Cross</strong><small>ABC-1D23 • Marina Alves</small></td>
+              <td>Lavagem Completa</td>
+              <td><select class="seletor-status"><option selected>Agendado</option><option>Recebido</option><option>Em lavagem</option><option>Concluído</option></select></td>
+            </tr>
+            <tr>
+              <td><strong>10:30</strong><small>até 11:30</small></td>
+              <td><strong>Chevrolet Onix</strong><small>GHI-4J56 • João Martins</small></td>
+              <td>Lavagem Essencial</td>
+              <td><select class="seletor-status"><option>Agendado</option><option>Recebido</option><option selected>Em lavagem</option><option>Concluído</option></select></td>
+            </tr>
+            <tr>
+              <td><strong>08:00</strong><small>até 11:00</small></td>
+              <td><strong>Jeep Renegade</strong><small>KLM-9N01 • Carla Souza</small></td>
+              <td>Detalhamento Premium</td>
+              <td><select class="seletor-status"><option>Agendado</option><option>Recebido</option><option>Em lavagem</option><option selected>Concluído</option></select></td>
+            </tr>
+            <tr>
+              <td><strong>13:30</strong><small>até 15:00</small></td>
+              <td><strong>Hyundai HB20</strong><small>PQR-2S34 • Pedro Lima</small></td>
+              <td>Lavagem Completa</td>
+              <td><select class="seletor-status"><option>Agendado</option><option selected>Recebido</option><option>Em lavagem</option><option>Concluído</option></select></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="cartao">
+        <h2>Capacidade <span class="capacidade-num">4/6</span></h2>
+        <p class="texto-suave">Boxes em uso agora</p>
+        <div class="boxes">
+          <span class="box ocupado"></span><span class="box ocupado"></span>
+          <span class="box ocupado"></span><span class="box ocupado"></span>
+          <span class="box"></span><span class="box"></span>
+        </div>
+        <p><strong>2 livres</strong></p>
+      </div>
+    </section>
+  </main>
+
+  <script src="../js/sidebar.js"></script>
+</body>
+</html>
